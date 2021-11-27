@@ -1,0 +1,116 @@
+:root{
+    --dark-sienna: #3c1518ff;
+    --blood-red: #69140eff;
+    --rust: #a44200ff;
+    --bronze: #d58936ff;
+    --pale-spring-bud: #f2f3aeff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Elementos Base */
+body{
+    background-color: var(--dark-sienna);
+    font-family: 'Calibri', Times, serif;
+    color: white;
+    font-weight: bold;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+header nav{
+    margin-right: 50px;
+}
+header .logo{
+    margin-left: 5px;
+    color: var(--pale-spring-bud);
+    font-family: 'Lobster';
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-left: 10px;
+}
+
+header nav a:hover{
+    color: var(--pale-spring-bud);
+    font-weight: bold;
+}
+
+
+
+/*Filme Principal */
+
+.filme_principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/tela_inicial.jpeg');
+
+    height: 550px;
+    background-size: contain;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.container_topo{
+    margin-left: 20px;
+}
+.btn02{
+    display: none;
+}
+
+.filme_principal .container{
+    width: 70%;
+}
+.filme_principal .descricao{
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.filme_principal .titulo{
+    font-size: 80px;
+    font-family: 'Lobster', cursive;
+}
+.carrosel-filmes h3{
+    padding: 20px;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+
+    cursor: pointer;
+    transition: .5s ease all;
+}
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+.botao i{
+    margin-right: 8px;
+}
+
+.box-filmes{
+    height: 30%;
+    width: 20%;
+    display: block;
+    border-radius: 10px
+}
+
+.carrosel-filme{
+    margin-top: 5px;
+}
